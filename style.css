@@ -21,7 +21,7 @@ body {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 50%;
-    max-width: 75%;
+
 }
 
 .container p {
@@ -92,7 +92,7 @@ button:hover {
 
 
 .b2{
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 
