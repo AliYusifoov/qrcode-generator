@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .container {
@@ -19,11 +20,12 @@ body {
     border-radius: 20px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 25vw;
+    width: 50%;
+    max-width: 75%;
 }
 
 .container p {
-    font-size: large;
+    font-size:2vh;
     margin-bottom: 10%;
     font-weight: 600;
     color: #333;
@@ -31,12 +33,13 @@ body {
 
 .container input {
     width: 100%;
-    padding: 4%;
+    padding: 1vh 1vw;
     border: 2px solid #ccc;
-    border-radius: 10px;
-    font-size: medium;
-    transition: 0.3s ease;
-    margin-bottom: 10%;
+    border-radius: 1.5vh;
+    font-size: 2vh;
+    margin-bottom: 3vh;
+    transition: border-color 0.3s ease;
+    appearance: none;
 }
 
 
@@ -73,7 +76,7 @@ body {
 
 button {
     padding: 5%;
-    font-size:medium;
+    font-size:2vh;
     width: 100%;
     border: none;
     border-radius: 10px;
