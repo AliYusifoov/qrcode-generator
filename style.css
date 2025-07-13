@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #f0f4ff, #dbe9ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 2%;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 25vw;
+}
+
+.container p {
+    font-size: large;
+    margin-bottom: 10%;
+    font-weight: 600;
+    color: #333;
+}
+
+.container input {
+    width: 100%;
+    padding: 4%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: medium;
+    transition: 0.3s ease;
+    margin-bottom: 10%;
+}
+
+
+
+.container input:focus {
+    border-color: #5a9eff;
+    outline: none;
+}
+
+.container input.error {
+    animation: shake 0.2s ease-in-out 3;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.imgBox {
+    display: none;
+    justify-content: center;
+    margin-bottom: 20%;
+}
+
+.imgBox.show-img {
+    display: flex;
+}
+
+.qrImage {
+    width: 80%;
+    height: 80%;
+}
+
+button {
+    padding: 5%;
+    font-size:medium;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #5a9eff;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #3f8efc;
+}
+
+
+.b2{
+    margin-top: 20%;
+}
+
+
+
+
+select {
+    width: 100%;
+    padding: 1vh 1vw;
+    border: 2px solid #ccc;
+    border-radius: 1.5vh;
+    font-size: 2vh;
+    background-color: white;
+    color: #333;
+    margin-bottom: 3vh;
+    transition: border-color 0.3s ease;
+    appearance: none;
+
+    /* Optional custom arrow */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg fill='%235a9eff' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1vw center;
+    background-size: 2vh;
+}
+
+select:focus {
+    border-color: #5a9eff;
+    outline: none;
+}
+
+option {
+    padding: 1.5vh 1vw;
+    font-size: 2vh;
+}
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(135deg, #232526, #414345);
+  }
+  .container {
+    background: #2c2f33;
+    color: white;
+  }
+  input {
+    background-color: #3a3d41;
+    color: white;
+  }
+  input:focus {
+    background-color: #4c4f52;
+  }
+  .container p{
+    color: #ccc;
+  }
+
+  select{
+    background-color: #3a3d41;
+    color: white;
+  }
+}
